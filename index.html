@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for charset and viewport -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile devices -->
+    <meta name="description" content="Portfolio of John Doe, Full Stack Developer, showcasing projects, skills, and achievements."> <!-- Description for SEO and preview purposes -->
+    <title>My Portfolio | 16alves02</title> <!-- Title of the page shown in the browser tab -->
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Link to Tailwind CSS for styling the page -->
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script> <!-- Link to Lucide Icons for adding icons -->
+
+    <!-- Link to external CSS (styles.css) -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to an external CSS file for additional styling -->
+</head>
+<body class="bg-gray-900 text-white font-sans leading-relaxed flex flex-col min-h-screen">
+    <!-- Progress Bar -->
+    <div id="progressBar" class="fixed top-0 left-0 w-full h-1 bg-blue-500"></div> <!-- A progress bar at the top of the page -->
+
+    <!-- Header Section -->
+    <header class="hero text-center py-20">
+        <h1 class="text-6xl font-extrabold">John Doe</h1> <!-- Main heading displaying the name -->
+        <p class="text-xl mt-2">Full Stack Developer | Passionate about creating innovative solutions</p> <!-- Subheading describing the profession -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+        <!-- Projects Section -->
+        <section class="container mx-auto px-6 py-12">
+            <h2 class="text-4xl font-bold text-center text-gray-300">Projects</h2> <!-- Title of the projects section -->
+            <p class="text-xl text-center mt-4 text-gray-400">Check out some of the projects I’ve worked on.</p> <!-- Subheading for projects -->
+            <div id="projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10"></div> <!-- Grid layout for displaying project items -->
+        </section>
+
+        <!-- Skills Section -->
+        <section class="container mx-auto px-6 py-12">
+            <h2 class="text-4xl font-bold text-center text-gray-300">Skills</h2> <!-- Title of the skills section -->
+            <p class="text-xl text-center mt-4 text-gray-400">Here are some of the skills I've acquired throughout my career.</p> <!-- Subheading for skills -->
+            <div id="skills" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10"></div> <!-- Grid layout for displaying skills -->
+        </section>
+
+        <!-- Social Media Links with Lucide Icons -->
+        <div class="mt-12 flex justify-center space-x-6">
+            <a href="https://github.com/16alves02" class="text-3xl" target="_blank" title="GitHub">
+                <i data-lucide="github" class="w-8 h-8"></i> <!-- GitHub icon -->
+            </a>
+            <a href="https://instagram.com/16alves02" class="text-3xl" target="_blank" title="Instagram">
+                <i data-lucide="instagram" class="w-8 h-8"></i> <!-- Instagram icon -->
+            </a>
+            <a href="https://youtube.com/@16alves02" class="text-3xl" target="_blank" title="YouTube">
+                <i data-lucide="youtube" class="w-8 h-8"></i> <!-- YouTube icon -->
+            </a>
+            <a href="https://facebook.com/profile.php?id=61557924755370" class="text-3xl" target="_blank" title="Facebook">
+                <i data-lucide="facebook" class="w-8 h-8"></i> <!-- Facebook icon -->
+            </a>
+            <a href="https://linkedin.com/in/leonardo-alves-502ba8291/" class="text-3xl" target="_blank" title="LinkedIn">
+                <i data-lucide="linkedin" class="w-8 h-8"></i> <!-- LinkedIn icon -->
+            </a>
+        </div>
+    </main>
+
+    <!-- Contact Section -->
+    <div class="container-xxl pb-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">Let’s Work Together</h1> <!-- Main heading of the contact section -->
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="#contact-form">Say Hello</a> <!-- Button leading to the contact form -->
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-2">My Office:</p>
+                    <h3 class="fw-bold">123 Street, Sample City, Country</h3> <!-- Address -->
+                    <hr class="w-100">
+                    <p class="mb-2">Call Me:</p>
+                    <h3 class="fw-bold">+012 345 6789</h3> <!-- Phone number -->
+                    <hr class="w-100">
+                    <p class="mb-2">Email Me:</p>
+                    <h3 class="fw-bold">john.doe@example.com</h3> <!-- Email address -->
+                </div>
+                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="mb-4">Feel free to reach out for any project inquiries. I'm always open to new opportunities and collaborations! <a href="https://github.com/16alves02">Download Now</a>.</p> <!-- Description and link to contact form -->
+                    <form id="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label> <!-- Input for the user's name -->
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label> <!-- Input for the user's email -->
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label> <!-- Input for the subject -->
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <label for="message">Message</label> <!-- Textarea for the user's message -->
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button> <!-- Submit button -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-center py-6 mt-12">
+        <p>&copy; 2025 John Doe. All rights reserved.</p> <!-- Footer with copyright notice -->
+    </footer>
+
+    <!-- "Back to Top" Button -->
+    <button id="backToTop" onclick="scrollToTop()" class="fixed bottom-10 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none" aria-label="Back to top">&#8679;</button> <!-- Button that scrolls the page back to the top -->
+
+    <!-- Link to the external JavaScript file (scripts.js) -->
+    <script src="scripts.js"></script> <!-- External JavaScript file -->
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons(); <!-- Initializes Lucide icons -->
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    min-height: 100vh; /* Ensures the body takes at least full viewport height */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif; /* Clean and modern font */
+    background-color: #111827; /* Dark background color */
+    color: #e5e7eb; /* Light text color */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Main content takes up available space */
+main {
+    flex: 1;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1e293b, #4f46e5); /* Gradient background */
+    padding: 6rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 4rem; /* Larger font size */
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #d1d5db; /* Light gray for the paragraph */
+}
+
+/* Footer Section */
+footer {
+    background-color: #1f2937; /* Dark footer background */
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto; /* Fixes the footer at the bottom */
+}
+
+/* General Links */
+a {
+    color: #60a5fa; /* Light blue color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4f46e5; /* Darker blue when hovered */
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4f46e5; /* Blue background */
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#backToTop:hover {
+    background: #caa838; /* Changes to yellow when hovered */
+    transform: translateY(-3px); /* Slight upward movement */
+}
+
+/* Projects and Skills Section */
+.bg-gray-800 {
+    background-color: #1f2937; /* Dark gray background for sections */
+}
+
+.bg-gray-800:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Card Styles for Projects/Skills */
+.card {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f3f4f6; /* Light color for card titles */
+}
+
+.card p {
+    margin-top: 1rem;
+    color: #9ca3af; /* Medium gray for card text */
+}
+
+.card a {
+    margin-top: 1rem;
+    display: inline-block;
+    color: #4f46e5; /* Blue for the card links */
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    color: #e5e7eb; /* Light gray for icons */
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #60a5fa; /* Blue on hover */
+}
+
+/* Progress Bar */
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background-color: #4f46e5; /* Blue color for the progress bar */
+    width: 0; /* Starts at 0 width */
+    transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4f46e5; /* Blue for the scrollbar thumb */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3b42b5; /* Darker blue on hover */
+}
+
+::-webkit-scrollbar-track {
+    background: #111827; /* Dark background for the scrollbar track */
+    border-radius: 10px;
+}
+
+/* Form Styles */
+input, textarea {
+    background-color: #1f2937; /* Dark background for inputs */
+    color: #e5e7eb; /* Light text for inputs */
+    border: 1px solid #374151; /* Dark border */
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4f46e5; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(79, 70, 229, 0.5); /* Shadow effect on focus */
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem; /* Smaller font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1.125rem;
+    }
+
+    .card {
+        padding: 1.5rem; /* Smaller padding for cards */
+    }
+
+    .card h3 {
+        font-size: 1.125rem; /* Smaller font size for card titles */
+    }
+}
+
+/* Button Styles */
+button {
+    background-color: #4f46e5; /* Blue background */
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b42b5; /* Darker blue on hover */
+}
+
+/* Final Layout Adjustments */
+.container {
+    padding: 2rem; /* Padding for container */
+}
+
+.text-center {
+    text-align: center; /* Center align text */
+}
+
+/* Fade-in Animation */
+.fade-in {
+    animation: fadeIn 0.5s ease-out; /* Smooth fade-in animation */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
