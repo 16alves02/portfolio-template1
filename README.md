@@ -26,7 +26,7 @@ Perfect for showcasing projects, skills, and experience.
 - Deploy on GitHub Pages for free hosting.  
 
 ## 📄 License  
-This project is **MIT Licensed** – feel free to use and customize.  
+Feel free to use and customize.  
 
 🎨 Designed & Developed by **[16alves02]**
 
