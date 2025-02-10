@@ -1,6 +1,3 @@
-Here’s your `README.md` with your name included:  
-
-```markdown
 # Portfolio Template 1
 
 A sleek and modern portfolio template built with **HTML**, **CSS (Tailwind)**, and **JavaScript**.  
@@ -31,9 +28,7 @@ Perfect for showcasing projects, skills, and experience.
 ## 📄 License  
 This project is **MIT Licensed** – feel free to use and customize.  
 
----
 🎨 Designed & Developed by **[16alves02]**
-```
 
 To add this to your repository:  
 1. Open your terminal and navigate to your project folder:  
@@ -51,6 +46,3 @@ To add this to your repository:
    git commit -m "Added README.md"
    git push origin main
    ```
-
-Your portfolio will be available at:  
-👉 **[https://16alves02.github.io/portfolio-template1/](https://16alves02.github.io/portfolio-template1/)**  
